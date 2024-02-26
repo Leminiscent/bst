@@ -9,6 +9,9 @@ class BinarySearchTree:
     def __init__(self):
         self.root = None
 
+    def __str__(self):
+        pass
+
     def insert(self, key):
         self.root = self._insert(self.root, key)
 
