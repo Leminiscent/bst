@@ -59,3 +59,6 @@ class BinarySearchTree:
         result = []
         self._inorder_traversal(self.root, result)
         return result
+    
+    def _inorder_traversal(self, node, result):
+        pass
