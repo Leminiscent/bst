@@ -10,7 +10,7 @@ class BinarySearchTree:
         self.root = None
 
     def __str__(self):
-        pass
+        return str(self.key)
 
     def insert(self, key):
         self.root = self._insert(self.root, key)
