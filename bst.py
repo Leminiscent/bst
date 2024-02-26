@@ -4,9 +4,10 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 class BinarySearchTree:
     def __init__(self):
         self.root = None
 
-    def insert(self):
-        pass
+    def insert(self, key):
+        self.root = self._insert(self.root, key)
