@@ -33,3 +33,11 @@ class BinarySearchTree:
 
     def delete(self, key):
         self.root = self._delete(self.root, key)
+
+    def _delete(self, node, key):
+        if node is None:
+            return node
+        if key < node.key:
+            node.left = self._delete(node.left, key)
+        elif key > node.key:
+            node.right = self._delete(node.right, key)
